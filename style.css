@@ -1,0 +1,418 @@
+﻿body {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: dimgrey;
+}
+
+#panel {
+    height: 200px;
+    background-color: lightgrey;
+	border: solid 1px dimgrey;
+	width: 270px;
+	padding: 10px;
+	float: right;
+}
+
+#legend {
+    height: 320px;
+	width: 270px;
+	padding: 10px;
+	float: right;
+} 
+
+.showhide-button {
+	width: 20px;
+	height: 20px;
+	border: solid 1px dimgrey;
+	margin: 10px 5px 10px 5px;
+	float: left;
+	background-color: #f7cf7e;
+}
+
+.button-box, .ct-button-box, .lg-button-box {
+	width: 260px;
+	margin: 5px;
+	background-color: white;
+}
+
+.lg-button-box  {
+    height: 40px;
+	border: solid 1px lightgrey;
+}
+
+.button-box {
+    height: 40px;
+	border: solid 1px dimgrey;
+}
+
+.ct-button-box {
+    height: 140px;
+	border: solid 1px lightgrey;
+}
+
+.thic-text-box {
+    width: 50px;
+	height: 30px;
+	float: left;
+	margin: 4px;
+}
+
+.legend-pic-box, .legend-pit-box {
+    width: 60px;
+	height: 30px;
+	float: left;
+	margin: 4px;
+}
+
+.legend-pic-box {
+	border: solid 1px dimgrey;
+}
+
+.legend-pic {
+    width: 100%;
+	height: 100%;
+}
+
+#map-box {
+	width: 1120px;
+    height: 550px;
+	margin: auto;
+}
+
+#map {
+    width: 800px;
+    height: 500px;
+    background-color: grey;
+	float:left;
+      }
+	  
+#floating-panel {
+	width: 320px;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+	margin: auto;
+}
+
+header {
+	position: fixed;
+    left: 0;
+    top: 0;
+    height: 80px;
+	width: 100%;
+    border-bottom: 3px solid orange;
+	background-color: white;
+}
+
+#header-block {
+	width: 960px;
+	height: 80px;
+	margin: 0 auto;
+}
+
+#logo {
+	padding-top: 5px;
+	width: 320px;
+	height: 80px;
+	float: left;
+}
+
+.nav {
+	padding-top: 25px;
+	width: 160px;
+	height: 55px;
+	float: left;
+}
+
+.nav:hover {
+	background: orange;
+    color: white;
+}
+
+.active {
+	padding-top: 25px;
+	width: 158px;
+	height: 55px;
+	float: left;
+	background: orange;
+    color: white;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+}
+
+.hide {
+	display: none;
+}
+
+#login-block {
+	width: 155px;
+	height: 80px;
+	float: left;	
+}
+
+.log-buttons {
+	margin-top: 10px;
+	text-align: center;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+    color: dimgrey;
+	width: 140px;
+	height: 25px;
+}
+
+.in-buttons {
+	margin-top: 10px;
+	text-align: center;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+    color: dimgrey;
+	width: 140px;
+	height: 25px;
+}
+
+.active-button {
+	margin-top: 10px;
+	text-align: center;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+    color: dimgrey;
+	width: 140px;
+	height: 25px;
+	background-color: #CAFF70;
+}
+
+#clearblock {
+	height: 80px;
+	width: 100%;
+}
+
+footer {
+	background-color: white;
+    height: 80px;
+	width: 100%;
+    border-top: 3px solid orange;
+}
+
+#footer-block {
+	width: 960px;
+	height: 80px;
+	margin: 0 auto;
+}
+
+#copy {
+	margin-left: 200px;
+	padding-top: 45px;
+}
+
+#socials {
+	margin-top: 10px;
+	width: 250px;
+	height: 60px;
+	float: right;
+}
+
+.formbox{
+	display: block;
+	width: 400px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin: auto;
+	text-align: left;
+}
+
+.myformbox {
+	display: block;
+	width: 400px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	text-align: left;
+	float: left;
+}
+
+input{
+	margin: 0 auto;
+	margin-top: 5px;
+	border: 1px solid #B0B0B0;
+	border-radius: 3px;
+	text-align: center;
+	height: 30px;
+	width: 400px;
+	background-color: #E4E3E3;
+}
+
+input[type="submit"] {
+	font: 14px myfont, Verdana;
+	background-color: orange;
+	width: 180px;
+	color: white;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+input[type="file"] {
+	padding-top: 5px;
+	height: 30px;
+	width: 400px;
+}
+
+.togglebutton {
+	width: 150px;
+}
+
+.formbutton {
+	width: 180px;
+	margin: 0 auto;
+}
+
+label {
+	font: 12px myfont, Verdana;
+	color: #3E3E3E;
+}
+
+.avatar {
+	width: 200px;
+	border-radius: 50%;
+}
+
+#my-book-button {
+	font: 14px myfont, Verdana;
+	background-color: orange;
+	width: 130px;
+	height: 60px;
+	color: white;
+	margin-top: 45px;
+	margin-left: 155px;
+}
+
+#my-apps-button {
+	font: 14px myfont, Verdana;
+	background-color: orange;
+	width: 130px;
+	height: 60px;
+	color: white;
+	margin-top: 15px;
+	margin-left: 155px;
+}
+
+#mp-wrapper {
+	width: 700px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+#books-wrapper {
+	margin: 0 auto;
+	width: 600px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	text-align: left;
+}
+
+#books-wrapper div{
+	font: 16px myfont, Verdana;
+	margin-top: 5px;
+	text-align: left;
+	height: auto;
+	float: left;
+}
+
+#books-wrapper button{
+	font: 12px myfont, Verdana;
+	background-color: #CAFF70;
+	color: dimgrey;
+	width: 90px;
+	height: 25px;
+	margin-top: 3px;	
+	margin-left: 20px;
+	border-radius: 3px;
+	border-color: #CAFF70;
+}
+
+.arrowmp {
+	display: block;
+	width: 40px;
+	margin-left: 0;
+	float: left;
+}
+
+.linkmp {
+	display: block;
+	text-decoration: none;
+	font: 12px myfont, Verdana;
+	margin-left: 0;
+	padding-top: 15px;
+	float: left;
+}
+
+.mphead {
+	margin-top: 0px;
+}
+
+table {
+	margin: 10px auto;
+	border-spacing: 5px;
+}
+
+th {
+	color: orange;
+}
+
+.write-app {
+	display: block;
+	text-decoration: none;
+	font: 14px myfont, Verdana;
+	background-color: #CAFF70;
+	color: dimgrey;
+	width: 160px;
+	height: 25px;
+	padding-top: 10px;
+	margin: 15px auto;	
+	border-radius: 3px;
+	border-color: #CAFF70;
+}
+
+textarea {
+	font: 14px myfont, Verdana;
+	text-align: center;
+	width: 400px;
+	height: 150px;
+}
+
+#mainpagebox {
+	width: 960px;
+	margin: auto auto;
+}
+
+#mainpagebox  img{
+	width: 620px;
+}
+
+aside {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	width: 300px;
+	font: 16px myfont, Verdana;
+	background-color: #CAFF70;
+	float: right;
+	}
+	
+aside span {
+	line-height: 1.5;
+}
+
+.tog-text-long, .tog-text {
+	line-height: 1;
+	color: dimgrey;
+	display: table-cell;
+}
+
+.tog-text-long {
+	padding-top: 5px;
+}
+
+.tog-text {
+	padding-top: 10px;
+}

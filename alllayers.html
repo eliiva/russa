@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>maps</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    
+	<div id="map-box">
+	  <div id="map"></div>
+	  <div id="panel">
+        <div class="button-box">
+		  <input class="showhide-button" onclick="addOverlay();" type=button value="+">
+          <input class="showhide-button" onclick="removeOverlay();" type=button value="-">
+          <span class="tog-text-long">Мощность культурного слоя</span>
+        </div>
+        <div class="button-box">
+          <input class="showhide-button" onclick="displayPolygon('culture', 'cult-layer');" type=button value="+">
+          <input class="showhide-button" onclick="hidePolygon('culture', 'cult-layer');" type=button value="-">
+          <span class="tog-text-long">Границы культурного слоя</span>
+        </div>
+        <div class="button-box">
+          <input class="showhide-button" onclick="displayPolygon('town', 'old-city');" type=button value="+">
+          <input class="showhide-button" onclick="hidePolygon('town', 'old-city');" type=button value="-">
+          <span class="tog-text-long">Границы древнего городища</span>
+        </div>
+        <div class="button-box">
+          <input class="showhide-button" onclick="displayPits();" type=button value="+">
+          <input class="showhide-button" onclick="hidePits();" type=button value="-">
+          <span class="tog-text">Раскопы</span>
+        </div>
+      </div>
+      <div id="legend">
+	    <div>
+          <span class="tog-text2">Условные обозначения</span>
+		</div>
+        <div id="cult-thick" class="ct-button-box">
+		  <div>
+            <span class="tog-text2">Мощность культурного слоя</span>
+		  </div>
+		  <div class="legend-pic-box">
+		    <img class="legend-pic" src="./image/0.5.png">
+		  </div>
+		  <div class="thic-text-box">
+            <span class="tog-text">0.5 м.</span>
+		  </div>
+		  <div class="legend-pic-box">
+		    <img class="legend-pic" src="./image/1.5.png">
+		  </div>
+          <div class="thic-text-box">
+            <span class="tog-text">1.5 м.</span>
+		  </div>
+		  <div class="legend-pic-box">
+		    <img class="legend-pic" src="./image/2.5.png">
+		  </div>
+		  <div class="thic-text-box">
+            <span class="tog-text">2.5 м.</span>
+		  </div>
+		  <div class="legend-pic-box">
+		    <img class="legend-pic" src="./image/3.5.png">
+		  </div>
+		  <div class="thic-text-box">
+            <span class="tog-text">3.5 м.</span>
+		  </div>
+		  <div class="legend-pic-box">
+		    <img class="legend-pic" src="./image/4.5.png">
+		  </div>
+		  <div class="thic-text-box">
+            <span class="tog-text">4.5 м.</span>
+		  </div>
+		  <div class="legend-pic-box">
+		    <img class="legend-pic" src="./image/5.5.png">
+		  </div>
+		  <div class="thic-text-box">
+            <span class="tog-text">5.5 м.</span>
+		  </div>
+        </div>
+        <div id="cult-layer" class="lg-button-box">
+		  <div class="legend-pic-box">
+		    <img class="legend-pic" src="./image/cultlayer.png">
+		  </div>
+          <span class="tog-text">Культурный слой</span>
+        </div>
+        <div id="old-city" class="lg-button-box">
+		  <div class="legend-pic-box">
+		    <img class="legend-pic" src="./image/oldtown.png">
+		  </div>
+          <span class="tog-text">Древнее городище</span>
+        </div>
+        <div id="pit-tag" class="lg-button-box">
+		  <div class="legend-pit-box">
+		    <img class="legend-pic" src="./image/pit.png">
+		  </div>
+          <span class="tog-text">Раскоп</span>
+        </div>
+      </div>
+	  <!-- <div id="legend">
+      <img src="legend2.png" width="270px" alt="Legend">
+    </div> -->
+	</div>
+	
+	<!--<div id="floating-panel">
+      <input class="togglebutton" onclick="removeOverlay();" type=button value="скрыть палеорельеф">
+      <input class="togglebutton" onclick="addOverlay();" type=button value="показать палеорельеф">
+    </div> -->
+	<div id="clearblock"></div>
+  <div style="clear: both"></div>
+  
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCraZKiWkvJ7IIiwk_IIyRyZleowhx0uOs&callback=initMap">
+    </script>
+  </body>
+</html>
