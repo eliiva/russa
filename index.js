@@ -36,10 +36,10 @@ function initMap() {
 	Polygon2 = new google.maps.Polygon({
     map: map,
     paths: townCoords,
-    strokeColor: '#FF0000',
+    strokeColor: 'purple',
     strokeOpacity: 0.5,
     strokeWeight: 2,
-    fillColor: '#FF0000',
+    fillColor: 'purple',
     fillOpacity: 0.2
   });
 
